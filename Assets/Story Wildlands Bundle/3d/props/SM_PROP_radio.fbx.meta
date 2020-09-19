@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 31b4cd8152fc85040aced9abbe2cc40a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SM_PROP_radio_antenna
+    100004: SM_PROP_radio_antenna1
+    100006: SM_PROP_radio_antenna2
+    100008: SM_PROP_radio_antenna3
+    100010: SM_PROP_radio_door
+    100012: SM_PROP_radio_freq
+    100014: SM_PROP_radio_grip
+    100016: SM_PROP_radio_interactable_front_big
+    100018: SM_PROP_radio_interactable_front_med
+    100020: SM_PROP_radio_interactable_front_small1
+    100022: SM_PROP_radio_interactable_front_small2
+    100024: SM_PROP_radio_interactable_side_big
+    100026: SM_PROP_radio_interactable_side_mid
+    400000: //RootNode
+    400002: SM_PROP_radio_antenna
+    400004: SM_PROP_radio_antenna1
+    400006: SM_PROP_radio_antenna2
+    400008: SM_PROP_radio_antenna3
+    400010: SM_PROP_radio_door
+    400012: SM_PROP_radio_freq
+    400014: SM_PROP_radio_grip
+    400016: SM_PROP_radio_interactable_front_big
+    400018: SM_PROP_radio_interactable_front_med
+    400020: SM_PROP_radio_interactable_front_small1
+    400022: SM_PROP_radio_interactable_front_small2
+    400024: SM_PROP_radio_interactable_side_big
+    400026: SM_PROP_radio_interactable_side_mid
+    2300000: //RootNode
+    2300002: SM_PROP_radio_antenna
+    2300004: SM_PROP_radio_antenna1
+    2300006: SM_PROP_radio_antenna2
+    2300008: SM_PROP_radio_antenna3
+    2300010: SM_PROP_radio_door
+    2300012: SM_PROP_radio_freq
+    2300014: SM_PROP_radio_grip
+    2300016: SM_PROP_radio_interactable_front_big
+    2300018: SM_PROP_radio_interactable_front_med
+    2300020: SM_PROP_radio_interactable_front_small1
+    2300022: SM_PROP_radio_interactable_front_small2
+    2300024: SM_PROP_radio_interactable_side_big
+    2300026: SM_PROP_radio_interactable_side_mid
+    3300000: //RootNode
+    3300002: SM_PROP_radio_antenna
+    3300004: SM_PROP_radio_antenna1
+    3300006: SM_PROP_radio_antenna2
+    3300008: SM_PROP_radio_antenna3
+    3300010: SM_PROP_radio_door
+    3300012: SM_PROP_radio_freq
+    3300014: SM_PROP_radio_grip
+    3300016: SM_PROP_radio_interactable_front_big
+    3300018: SM_PROP_radio_interactable_front_med
+    3300020: SM_PROP_radio_interactable_front_small1
+    3300022: SM_PROP_radio_interactable_front_small2
+    3300024: SM_PROP_radio_interactable_side_big
+    3300026: SM_PROP_radio_interactable_side_mid
+    4300000: SM_PROP_radio
+    4300002: SM_PROP_radio_grip
+    4300004: SM_PROP_radio_freq
+    4300006: SM_PROP_radio_interactable_front_big
+    4300008: SM_PROP_radio_interactable_side_big
+    4300010: SM_PROP_radio_interactable_front_med
+    4300012: SM_PROP_radio_interactable_side_mid
+    4300014: SM_PROP_radio_interactable_front_small2
+    4300016: SM_PROP_radio_interactable_front_small1
+    4300018: SM_PROP_radio_door
+    4300020: SM_PROP_radio_antenna
+    4300022: SM_PROP_radio_antenna2
+    4300024: SM_PROP_radio_antenna3
+    4300026: SM_PROP_radio_antenna1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_PROP_radio
+    second: {fileID: 2100000, guid: 5c9415d2ef1e1e64e93ee3563bb4981d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
