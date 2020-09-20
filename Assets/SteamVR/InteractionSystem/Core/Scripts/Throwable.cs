@@ -146,7 +146,7 @@ namespace Valve.VR.InteractionSystem
 
 			hand.HoverLock( null );
 
-            rigidbody.interpolation = RigidbodyInterpolation.None;
+            //rigidbody.interpolation = RigidbodyInterpolation.None;
 
             if (velocityEstimator != null)
 		        velocityEstimator.BeginEstimatingVelocity();

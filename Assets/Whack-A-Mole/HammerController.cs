@@ -25,7 +25,7 @@ public class HammerController : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         Debug.Log("hit");
-        Destroy(other);
+        
         score = score + 1;
         scoreText.text = score.ToString();
         ms.spawn();

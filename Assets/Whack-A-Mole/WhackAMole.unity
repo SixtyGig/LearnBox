@@ -3731,6 +3731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41b03b7a8ab58544facc20d181b6aa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTime: 20
   activity: 2
 --- !u!4 &724755376
 Transform:
@@ -4060,7 +4061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026ec9e151517a44fb3072cf733c39ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1606555789}
   score: 0
 --- !u!114 &761834660
 MonoBehaviour:
@@ -4131,7 +4132,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &761834662
 MonoBehaviour:
   m_ObjectHideFlags: 0

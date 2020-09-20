@@ -15,7 +15,8 @@ public class ScenarioManager : MonoBehaviour
     // Extra Variables
     private string scene;
     public float gameTime = 20;
-
+    public int gameScore = 0;
+    public bool gameOverBool = false;
     private bool checklistComplete = false;
     
 
@@ -23,7 +24,7 @@ public class ScenarioManager : MonoBehaviour
     private GameObject scenarioManager;
     // WAM GameObjects
     private GameObject gameTimer;
-    private GameObject gameScore;
+    private GameObject gameScoreText;
 
 
     private GameObject descriptionUI; // An object in the scene that contains a task description
@@ -70,11 +71,11 @@ public class ScenarioManager : MonoBehaviour
     {
         // Initial Setup - Essentially OnLoad() for WAM
         gameTimer = GameObject.FindGameObjectWithTag("Timer");
-        gameScore = GameObject.FindGameObjectWithTag("Score");
+        gameScoreText = GameObject.FindGameObjectWithTag("Score");
 
         // Set gameTime
         gameTimer.GetComponent<Text>().text = gameTime.ToString();
-        gameScore.GetComponent<Text>().text = gmScore.ToString;
+        gameScoreText.GetComponent<Text>().text = gameScore.ToString();
 
         tasklist.Add("WhackAMole", false);
     }
@@ -84,13 +85,20 @@ public class ScenarioManager : MonoBehaviour
 
     public void WAMUpdate() 
     {
-        gameTime -= Time.deltaTime;
-        gameTimer.GetComponent<Text>().text = Mathf.Round(gameTime).ToString();
-
         if (gameTimer.GetComponent<Text>().text == "0")
         {
             gameTimer.GetComponent<Text>().text = "--";
-            //trigger winning condition
+            gameOverBool = true;
+            // Trigger winning condition - Future feature
+        }
+        else
+        {
+            if (gameOverBool == false)
+            {
+                // Running Timer
+                gameTime -= Time.deltaTime;
+                gameTimer.GetComponent<Text>().text = Mathf.Round(gameTime).ToString();
+            }
         }
     }
 
@@ -99,11 +107,11 @@ public class ScenarioManager : MonoBehaviour
     {
         if (scene == "MainMenu")
         {
-            
+            // IF the MainMenu scene needs updates, creat and call BeachUpdate();            
         }
         else if (scene == "Beach")
         {
-
+            // IF the Beach scene needs updates, creat and call BeachUpdate();
         }
         else if (scene == "WhackAMole")
         {
