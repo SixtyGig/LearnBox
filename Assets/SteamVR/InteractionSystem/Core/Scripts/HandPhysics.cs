@@ -30,7 +30,7 @@ namespace Valve.VR.InteractionSystem
 
         private bool initialized = false;
 
-        private bool collisionsEnabled = true;
+        //private bool collisionsEnabled = true;
 
 
         private void Start()
@@ -91,26 +91,26 @@ namespace Valve.VR.InteractionSystem
         private void UpdatePositions()
         {
             // disable collisions when holding something
-            if (hand.currentAttachedObject != null)
-            {
-                collisionsEnabled = true;
-            }
-            else
-            {
+            //if (hand.currentAttachedObject != null)
+            //{
+            //    collisionsEnabled = true;
+            //}
+            //else
+            //{
                 // wait for area to become clear before reenabling collisions
-                if (!collisionsEnabled)
-                {
-                    clearanceBuffer[0] = null;
-                    Physics.OverlapSphereNonAlloc(hand.objectAttachmentPoint.position, collisionReenableClearanceRadius, clearanceBuffer);
+                //if (!collisionsEnabled)
+                //{
+                    //clearanceBuffer[0] = null;
+                    //Physics.OverlapSphereNonAlloc(hand.objectAttachmentPoint.position, collisionReenableClearanceRadius, clearanceBuffer);
                     // if we don't find anything in the vicinity, reenable collisions!
-                    if (clearanceBuffer[0] == null)
-                    {
-                        collisionsEnabled = true;
-                    }
-                }
-            }
+                    //if (clearanceBuffer[0] == null)
+                    //{
+                        //collisionsEnabled = true;
+                    //}
+                //}
+            //}
 
-            handCollider.SetCollisionDetectionEnabled(collisionsEnabled);
+            //handCollider.SetCollisionDetectionEnabled(collisionsEnabled);
 
             if (hand.skeleton == null) return;
             initialized = true;

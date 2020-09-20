@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 
 public class ScenarioManager : MonoBehaviour
 {
@@ -13,13 +14,18 @@ public class ScenarioManager : MonoBehaviour
 
     // Extra Variables
     private string scene;
-    
+    public float gameTime = 20;
+
     private bool checklistComplete = false;
     
 
     // GameObjects to Locate
     private GameObject scenarioManager;
+    // WAM GameObjects
     private GameObject gameTimer;
+    private GameObject gameScore;
+
+
     private GameObject descriptionUI; // An object in the scene that contains a task description
 
 
@@ -45,7 +51,7 @@ public class ScenarioManager : MonoBehaviour
 
 
     // + CHECKLISTS AND SETTINGS +
-    private void setupMainMenu()
+    public void setupMainMenu()
     {
         tasklist.Add("StartApp", true);
         tasklist.Add("ChooseLocation", false);
@@ -54,20 +60,39 @@ public class ScenarioManager : MonoBehaviour
 
 
     }
-    private void setupBeachScene() 
+    public void setupBeachScene() 
     {
         tasklist.Add("CountClouds", false);
         tasklist.Add("PickUpTrash", false);
         tasklist.Add("LocateWaterBottles", false);
     }
-    private void setupWhackAMole() 
+    public void setupWhackAMole() 
     {
+        // Initial Setup - Essentially OnLoad() for WAM
+        gameTimer = GameObject.FindGameObjectWithTag("Timer");
+        gameScore = GameObject.FindGameObjectWithTag("Score");
+
+        // Set gameTime
+        gameTimer.GetComponent<Text>().text = gameTime.ToString();
+        gameScore.GetComponent<Text>().text = gmScore.ToString;
+
         tasklist.Add("WhackAMole", false);
     }
 
     // Pause for 5 seconds, for the user to read the instructions
     IEnumerator WaitFiveSeconds() { yield return new WaitForSeconds(5); }
 
+    public void WAMUpdate() 
+    {
+        gameTime -= Time.deltaTime;
+        gameTimer.GetComponent<Text>().text = Mathf.Round(gameTime).ToString();
+
+        if (gameTimer.GetComponent<Text>().text == "0")
+        {
+            gameTimer.GetComponent<Text>().text = "--";
+            //trigger winning condition
+        }
+    }
 
     // On Update
     public void Update()
@@ -82,7 +107,7 @@ public class ScenarioManager : MonoBehaviour
         }
         else if (scene == "WhackAMole")
         {
-            
+            WAMUpdate();
         }
         else 
         {
@@ -97,7 +122,7 @@ public class ScenarioManager : MonoBehaviour
     private void Awake()
     {
         scenarioManager = GameObject.FindGameObjectWithTag("ScenarioManager");
-        gameTimer = GameObject.FindGameObjectWithTag("Timer");
+        
     }
 
     // On Start
