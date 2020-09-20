@@ -36,7 +36,7 @@ public class MoleSpawn : MonoBehaviour
         {
             gameTime = 0;
         }
-        gameText.text = gameTime.ToString("0");
+        gameText.text = gameTime.ToString("0")+ ":00";
 
         if (gameTime == 0)
         {
