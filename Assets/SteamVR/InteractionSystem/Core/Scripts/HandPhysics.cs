@@ -93,7 +93,7 @@ namespace Valve.VR.InteractionSystem
             // disable collisions when holding something
             if (hand.currentAttachedObject != null)
             {
-                collisionsEnabled = false;
+                collisionsEnabled = true;
             }
             else
             {
@@ -134,10 +134,10 @@ namespace Valve.VR.InteractionSystem
 
 
             //bypass physics when game paused
-            if (Time.timeScale == 0)
-            {
-                handCollider.TeleportTo(targetPosition, targetRotation);
-            }
+            //if (Time.timeScale == 0)
+            //{
+            //    handCollider.TeleportTo(targetPosition, targetRotation);
+            //}
         }
 
         Transform wrist;
