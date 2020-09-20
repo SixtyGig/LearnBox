@@ -8,6 +8,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - ScenarioManager
+  - Timer
   layers:
   - Default
   - TransparentFX
