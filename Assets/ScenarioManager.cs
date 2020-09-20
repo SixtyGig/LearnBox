@@ -26,11 +26,11 @@ public class ScenarioManager : MonoBehaviour
 
     // Task list
     // Each entry into the tasklist must contain a [String - Name of task] and a [True/False value] expressing if a task has been completed or not
-    private Dictionary<string, bool> tasklist = new Dictionary<string, bool>();
+    public Dictionary<string, bool> tasklist = new Dictionary<string, bool>();
     
     // Task Instructions
     // Each entry contains the [TaskName] and [The text we'd like to display as instructions]
-    private Dictionary<string, string> taskInstruct = new Dictionary<string, string>()
+    public Dictionary<string, string> taskInstruct = new Dictionary<string, string>()
     {
         // Main Menu
         { "StartApp" , "Welcome to LearnBox! This is an educational environment where you can learn how " },
