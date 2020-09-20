@@ -1,6 +1,6 @@
 # LearnBox
 #### Event: HackMIT 2020
-#### Team: Austin Winkler, Luis Alemany Traconis, Tara Mukund, Team member 4 
+#### Team: Austin Winkler, Luis Alemany Traconis, Tara Mukund, Arisha Khal
 Virtual reality has the potential to be a very powerful learning tool, and we believe that it will be easier to apply to education, if started early and used with society's youth. Our team has created a Virtual Reality Sandbox environment for younger students who have a visual or physical learning style. 
 
 There's a mother who teaches Kindergarten through 4th grade regularly. Unfortunately due to COVID-19, she has had plenty of struggles keeping students engaged in their education. This is primarily due to the absence of physical interaction from the classroom. His mother has been using educational websites such as "CoolMathGames" to provide an educational experience while keeping her students engaged and entertained.
